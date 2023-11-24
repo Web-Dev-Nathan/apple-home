@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+  background-color: red;
+} */
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+.border {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  width: 20px;
+}
+.button {
+  border: none;
+}
+.cont {
+  text-align: center !important;
+  margin: 0 auto;
+}
+
+.white {
+  opacity: 0.75;
+  font-size: 14px;
+}
+.white:hover,
+.white:active {
+  opacity: 1;
+}
+
+.bg-blackk {
+  background-color: #252525;
+  opacity: 90%;
+}
+
+/* section style */
+.arrow {
+  border: solid #1877b9;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.top-text {
+  font-size: 14px;
+}
+.top-text a {
+  text-decoration: none;
+}
+.top-text a:hover {
+  text-decoration: underline;
+}
+.text-wrapper h1 {
+  font-size: 55px;
+}
+.third-section .text-wrapper {
+  position: absolute;
+  top: 1400px;
+  left: 50px;
+}
+
+.first-section {
+  background-image: url(../images/iphone14pro__large_2x.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+}
+.second-section {
+  background-image: url(../images/iphone14_large.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+}
+.third-section {
+  background-image: url(../images/ipadpro-large.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+}
+.trade-in {
+  background-image: url(../images/trade-in.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+}
+.wwdc {
+  /* background-image: url(../images/apple\ wwdc.jpg);
+  background-size: cover;
+  background-position:center; */
+  height: 580px;
+  background-color: black;
+}
+.divimg {
+  height: 420px;
+}
+
+.watch-series {
+  background-image: url(../images/apple\ watch.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+}
+.macbook-pro {
+  background-image: url(../images/promo_mbp__ek7p477bkp6q_small.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+}
+.iphone-health {
+  background-image: url(../images/health-care.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+}
+.iphone-card {
+  background-image: url(../images/tile__cauwwcyyn9hy_large.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+}
+
+/* footer style */
+.footer {
+  background-color: #f5f5f7;
+  color: #86868b;
+  font-size: 0.75em;
+}
+.footer-link div a {
+  color: #86868b;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-align: left;
+}
+.footer-link div a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .searchcart {
+    opacity: 0;
+  }
+  .bg-blackk {
+    background-color: black;
+    opacity: 1;
+  }
+
+  .white {
+    font-size: 20px;
+  }
+  .divimg {
+    height: 320px;
+  }
+  .fifth-section .text-wrapper h1,
+  .sixth-section .text-wrapper h1 {
+    font-size: 40px;
+  }
+  .first-section {
+    height: 500px;
+  }
+  .second-section {
+    background-image: url(../images/iphone14_small_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  .third-section {
+    background-image: url(../images/ipadpro_small.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  .trade-in,
+  .wwdc,
+  .watch-series,
+  .macbook-pro,
+  .iphone-card,
+  .iphone-health {
+    height: 500px;
+  }
+
+  .footer-link div ul li {
+    display: none;
+  }
+  .footer-link div div {
+    border-bottom: 0.5px solid #86868b;
+    padding-bottom: 10px;
+    color: rgb(136, 132, 132);
+  }
+}
+@media (max-width: 991px) {
+  .first-section {
+    background-image: url(../images/hero_iphone14pro_spring__9xo85pm6sbmm_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+  }
+  .third-section {
+    background-image: url(../images/ipadpro_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+  }
+  .third-section .text-wrapper {
+    position: static;
+    text-align: center;
+  }
+}
