@@ -1,0 +1,21 @@
+name: Deploy Static HTML to Surge
+
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to deploy from
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to Surge
+        run: |
+          npm install --global surge
+          surge ./ --domain first-app-by-nathan.surge.sh
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
