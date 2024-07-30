@@ -16,6 +16,6 @@ jobs:
       - name: Deploy to Surge
         run: |
           npm install --global surge
-          surge ./ --domain first-app-by-nathan.surge.sh
+          surge ./public --domain first-app-by-nathan.surge.sh
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
